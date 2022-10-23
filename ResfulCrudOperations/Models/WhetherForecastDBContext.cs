@@ -32,8 +32,6 @@ namespace ResfulCrudOperations.Models
         {
             modelBuilder.Entity<City>(entity =>
             {
-                entity.Property(e => e.CityId).ValueGeneratedNever();
-
                 entity.Property(e => e.CityName).HasMaxLength(50);
 
                 entity.Property(e => e.DateEstablished).HasColumnType("datetime");
@@ -49,11 +47,9 @@ namespace ResfulCrudOperations.Models
             {
                 entity.HasNoKey();
 
-                entity.Property(e => e.CityId)
-                    .HasMaxLength(10)
-                    .IsFixedLength();
+                entity.Property(e => e.CountryId).ValueGeneratedOnAdd();
 
-                entity.Property(e => e.CountryId)
+                entity.Property(e => e.CountryName)
                     .HasMaxLength(10)
                     .IsFixedLength();
 
@@ -64,15 +60,37 @@ namespace ResfulCrudOperations.Models
                 entity.Property(e => e.TwoDigitCountryCode)
                     .HasMaxLength(10)
                     .IsFixedLength();
+
+                entity.HasOne(d => d.City)
+                    .WithMany(p => p.Country)
+                    .HasForeignKey(d => d.CityId)
+                    .HasConstraintName("FK_City");
             });
 
             modelBuilder.Entity<WhetherForecast>(entity =>
             {
                 entity.HasNoKey();
 
-                entity.Property(e => e.Uv).HasColumnName("UV");
+                entity.Property(e => e.DewPoint).HasMaxLength(50);
+
+                entity.Property(e => e.Humidity).HasMaxLength(50);
+
+                entity.Property(e => e.Temperature).HasMaxLength(50);
+
+                entity.Property(e => e.Uv)
+                    .HasColumnName("UV")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Visibility).HasMaxLength(50);
 
                 entity.Property(e => e.WhetherDescription).HasMaxLength(50);
+
+                entity.Property(e => e.WhetherForecastId).ValueGeneratedOnAdd();
+
+                entity.HasOne(d => d.City)
+                    .WithMany(p => p.WhetherForecast)
+                    .HasForeignKey(d => d.CityId)
+                    .HasConstraintName("FK_CityWhether");
             });
 
             OnModelCreatingPartial(modelBuilder);

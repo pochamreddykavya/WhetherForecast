@@ -8,9 +8,12 @@ namespace ResfulCrudOperations.Models
         public int WhetherForecastId { get; set; }
         public int? CityId { get; set; }
         public string WhetherDescription { get; set; }
-        public int? Humidity { get; set; }
-        public int? DewPoint { get; set; }
-        public int? Uv { get; set; }
-        public int? Visibility { get; set; }
+        public string Temperature { get; set; }
+        public string Humidity { get; set; }
+        public string DewPoint { get; set; }
+        public string Uv { get; set; }
+        public string Visibility { get; set; }
+
+        public virtual City City { get; set; }
     }
 }

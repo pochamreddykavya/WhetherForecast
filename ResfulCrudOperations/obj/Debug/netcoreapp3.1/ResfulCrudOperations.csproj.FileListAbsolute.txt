@@ -112,3 +112,4 @@ C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\ResfulCrudOperations\obj\Debug\netco
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\ResfulCrudOperations\obj\Debug\netcoreapp3.1\ResfulCrudOperations.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\ResfulCrudOperations\obj\Debug\netcoreapp3.1\ResfulCrudOperations.pdb
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\ResfulCrudOperations\obj\Debug\netcoreapp3.1\ResfulCrudOperations.genruntimeconfig.cache
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\ResfulCrudOperations\obj\Debug\netcoreapp3.1\ResfulCrudOperations.csproj.AssemblyReference.cache

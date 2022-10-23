@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Compile Include="Models\City.cs" />
+    <Compile Include="Models\CityWhetherForecast.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\WhetherForecast.cs" />

@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\ResfulCrudOperations",
-    "\\ResfulCrudOperations\\Migrations",
     "\\ResfulCrudOperations\\Models"
   ],
-  "SelectedNode": "\\ResfulCrudOperations\\appsettings.json",
+  "SelectedNode": "\\ResfulCrudOperations\\Models\\WhetherForecastDBContext.cs",
   "PreviewInSolutionExplorer": false
 }
