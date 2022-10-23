@@ -13,9 +13,9 @@ namespace ResfulCrudOperations.Controllers
     public class CityController : ControllerBase
     {
 
-        CityContext context = null;
+        WhetherForecastDBContext context = null;
 
-        public CityController(CityContext _obj)
+        public CityController(WhetherForecastDBContext _obj)
         {
             context = _obj;
         }
@@ -32,18 +32,18 @@ namespace ResfulCrudOperations.Controllers
         [HttpDelete("{cityId}")]
         public IActionResult DeleteCity(int cityId)
         {
-            var obj=context.City.Where(x => x.CityId == cityId).FirstOrDefault();
+            var obj = context.City.Where(x => x.CityId == cityId).FirstOrDefault();
             context.Remove(obj);
             context.SaveChanges();
 
             return NoContent();
         }
 
-       
+
         [HttpPut]
         public IActionResult UpdateCity(City city)
         {
-            var obj = context.City.Where(x=>x.CityId==city.CityId).FirstOrDefault();
+            var obj = context.City.Where(x => x.CityId == city.CityId).FirstOrDefault();
             obj.CityName = city.CityName;
             obj.DateEstablished = city.DateEstablished;
             obj.State = city.State;

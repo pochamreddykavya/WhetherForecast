@@ -5001,11 +5001,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chkir\\OneDrive\\Desktop\\ResfulCrudOperations\\ResfulCrudOperations\\ResfulCrudOperations.csproj",
+      "projectUniqueName": "C:\\Users\\chkir\\OneDrive\\Desktop\\RestCRUDGit\\ResfulCrudOperations\\ResfulCrudOperations.csproj",
       "projectName": "ResfulCrudOperations",
-      "projectPath": "C:\\Users\\chkir\\OneDrive\\Desktop\\ResfulCrudOperations\\ResfulCrudOperations\\ResfulCrudOperations.csproj",
+      "projectPath": "C:\\Users\\chkir\\OneDrive\\Desktop\\RestCRUDGit\\ResfulCrudOperations\\ResfulCrudOperations.csproj",
       "packagesPath": "C:\\Users\\chkir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chkir\\OneDrive\\Desktop\\ResfulCrudOperations\\ResfulCrudOperations\\obj\\",
+      "outputPath": "C:\\Users\\chkir\\OneDrive\\Desktop\\RestCRUDGit\\ResfulCrudOperations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chkir\\AppData\\Roaming\\NuGet\\NuGet.Config",
