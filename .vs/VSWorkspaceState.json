@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\ResfulCrudOperations",
-    "\\ResfulCrudOperations\\Models"
+    "\\ResfulCrudOperations\\Models",
+    "\\WhetherForecastTest",
+    "\\WhetherForecastTest\\Models"
   ],
-  "SelectedNode": "\\ResfulCrudOperations\\Models\\WhetherForecastDBContext.cs",
+  "SelectedNode": "\\WhetherForecastTest\\Models\\WhetherForecastTests.cs",
   "PreviewInSolutionExplorer": false
 }

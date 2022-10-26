@@ -18,36 +18,79 @@ namespace ResfulCrudOperations.Controllers
         }
 
         [HttpPost]
-        public bool AddCity(City city)
+        public IActionResult AddCity(City city)
         {
-            context.City.Add(city);
-            context.SaveChanges();
+            if (city == null)
+            {
+                return StatusCode(500);
+            }
+            try
+            {
+                context.City.Add(city);
+                context.SaveChanges();
 
-            return true;
+                return StatusCode(200);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
         }
 
         [HttpDelete("{cityId}")]
         public IActionResult DeleteCity(int cityId)
-        {
-            var obj = context.City.Where(x => x.CityId == cityId).FirstOrDefault();
-            context.Remove(obj);
-            context.SaveChanges();
+        { 
+            if(cityId == 0)
+            {
+                return null;
+            }
+            try
+            {
+                var obj = context.City.Where(x => x.CityId == cityId).FirstOrDefault();
+                if(obj==null)
+                { 
+                    return StatusCode(404);
+                }
+                context.City.Remove(obj);
+                context.SaveChanges();
 
-            return NoContent();
+                return StatusCode(200);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
         }
-
 
         [HttpPut]
         public IActionResult UpdateCity(City city)
         {
-            var obj = context.City.Where(x => x.CityId == city.CityId).FirstOrDefault();
-            obj.CityName = city.CityName;
-            obj.DateEstablished = city.DateEstablished;
-            obj.State = city.State;
-            obj.TouristRating = city.TouristRating;
-            context.SaveChanges();
+            if(city==null || city.CityId==0)
+            {
+                return null;
+            }
+            try
+            {
+             var obj = context.City.Where(x => x.CityId == city.CityId).FirstOrDefault();
 
-            return NoContent();
+            if(obj==null)
+            {
+                return null;
+            }
+           
+                obj.CityName = city.CityName;
+                obj.DateEstablished = city.DateEstablished;
+                obj.State = city.State;
+                obj.TouristRating = city.TouristRating;
+                obj.EstimatedPopulation = city.EstimatedPopulation;
+                context.SaveChanges();
+
+                return StatusCode(200);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500);
+            }
         }
 
         [HttpGet("{cityName}")]
@@ -62,7 +105,7 @@ namespace ResfulCrudOperations.Controllers
                 var cityInfo = context.City.Where(x => x.CityName == cityName).FirstOrDefault();
                 if (cityInfo != null)
                 {
-                    var countryInfo = context.Country.Where(x => x.CityId == cityInfo.CityId).FirstOrDefault();
+                    var countryInfo = context.Country.Where(x => x.CountryId == cityInfo.CountryId).FirstOrDefault();
                     var WhetherForecastInfo = context.WhetherForecast.Where(x => x.CityId == cityInfo.CityId).FirstOrDefault();
 
                     cityWhetherForecast.City = cityInfo;

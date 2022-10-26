@@ -1,4 +1,9 @@
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.AssemblyInfoInputs.cache
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.AssemblyInfo.cs
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.csproj.CoreCompileInputs.cache
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.csproj.AssemblyReference.cache
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\ResfulCrudOperations.Views.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\ResfulCrudOperations.Views.pdb
@@ -20,6 +25,7 @@ C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcor
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\WhetherForecastTest.runtimeconfig.dev.json
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\WhetherForecastTest.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\WhetherForecastTest.pdb
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -36,6 +42,8 @@ C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcor
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Moq.AutoMock.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\nunit.framework.dll
@@ -118,15 +126,7 @@ C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcor
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\ResfulCrudOperations.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\ResfulCrudOperations.pdb
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.csproj.AssemblyReference.cache
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.AssemblyInfoInputs.cache
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.AssemblyInfo.cs
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.csproj.CoreCompileInputs.cache
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.csproj.CopyComplete
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.dll
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.pdb
 C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\obj\Debug\netcoreapp3.1\WhetherForecastTest.genruntimeconfig.cache
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Castle.Core.dll
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Moq.dll
-C:\Users\chkir\OneDrive\Desktop\RestCRUDGit\WhetherForecastTest\bin\Debug\netcoreapp3.1\Moq.AutoMock.dll

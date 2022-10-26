@@ -1,0 +1,78 @@
+﻿USE [WhetherForecastDB]
+GO
+
+ALTER TABLE [dbo].[WhetherForecast] DROP CONSTRAINT [FK_CityWhether]
+GO
+
+/****** Object:  Table [dbo].[WhetherForecast]    Script Date: 10/25/2022 11:46:35 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[WhetherForecast]') AND type in (N'U'))
+DROP TABLE [dbo].[WhetherForecast]
+GO
+
+/****** Object:  Table [dbo].[WhetherForecast]    Script Date: 10/25/2022 11:46:35 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[WhetherForecast](
+	[WhetherForecastId] [int] IDENTITY(1,1) NOT NULL,
+	[CityId] [int] NULL,
+	[WhetherDescription] [nvarchar](50) NULL,
+	[Temperature] [nvarchar](50) NULL,
+	[Humidity] [nvarchar](50) NULL,
+	[DewPoint] [nvarchar](50) NULL,
+	[UV] [nvarchar](50) NULL,
+	[Visibility] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[WhetherForecast]  WITH CHECK ADD  CONSTRAINT [FK_CityWhether] FOREIGN KEY([CityId])
+REFERENCES [dbo].[City] ([CityId])
+GO
+
+ALTER TABLE [dbo].[WhetherForecast] CHECK CONSTRAINT [FK_CityWhether]
+GO
+
+
+
+
+
+
+
+
+
+USE [WhetherForecastDB]
+GO
+
+/****** Object:  Table [dbo].[WhetherForecast]    Script Date: 10/25/2022 11:46:35 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[WhetherForecast]') AND type in (N'U'))
+DROP TABLE [dbo].[WhetherForecast]
+GO
+
+/****** Object:  Table [dbo].[WhetherForecast]    Script Date: 10/25/2022 11:46:35 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[WhetherForecast](
+	[WhetherForecastId] [int] IDENTITY(1,1) NOT NULL,
+	[CityId] [int] NOT NULL,
+	[WhetherDescription] [nvarchar](50) NULL,
+	[Temperature] [nvarchar](50) NULL,
+	[Humidity] [nvarchar](50) NULL,
+	[DewPoint] [nvarchar](50) NULL,
+	[UV] [nvarchar](50) NULL,
+	[Visibility] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+
+
+

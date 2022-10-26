@@ -5,23 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\**" />
-    <Content Remove="Models\**" />
-    <EmbeddedResource Remove="Models\**" />
-    <None Remove="Models\**" />
+    <Compile Remove="Database\**" />
+    <Content Remove="Database\**" />
+    <EmbeddedResource Remove="Database\**" />
+    <None Remove="Database\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Views\Shared\Error.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Models\City.cs" />
-    <Compile Include="Models\CityWhetherForecast.cs" />
-    <Compile Include="Models\Country.cs" />
-    <Compile Include="Models\ErrorViewModel.cs" />
-    <Compile Include="Models\WhetherForecast.cs" />
-    <Compile Include="Models\WhetherForecastDBContext.cs" />
   </ItemGroup>
 
   <ItemGroup>

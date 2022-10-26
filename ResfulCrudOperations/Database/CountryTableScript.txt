@@ -1,0 +1,68 @@
+﻿USE [WhetherForecastDB]
+GO
+
+ALTER TABLE [dbo].[Country] DROP CONSTRAINT [FK_City]
+GO
+
+/****** Object:  Table [dbo].[Country]    Script Date: 10/25/2022 11:46:27 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Country]') AND type in (N'U'))
+DROP TABLE [dbo].[Country]
+GO
+
+/****** Object:  Table [dbo].[Country]    Script Date: 10/25/2022 11:46:27 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Country](
+	[CountryId] [int] IDENTITY(1,1) NOT NULL,
+	[CityId] [int] NULL,
+	[TwoDigitCountryCode] [nchar](10) NULL,
+	[ThreeDigitCountryCode] [nchar](10) NULL,
+	[CountryName] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Country]  WITH CHECK ADD  CONSTRAINT [FK_City] FOREIGN KEY([CityId])
+REFERENCES [dbo].[City] ([CityId])
+GO
+
+ALTER TABLE [dbo].[Country] CHECK CONSTRAINT [FK_City]
+GO
+
+
+
+
+
+
+USE [WhetherForecastDB]
+GO
+
+/****** Object:  Table [dbo].[Country]    Script Date: 10/25/2022 11:46:27 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Country]') AND type in (N'U'))
+DROP TABLE [dbo].[Country]
+GO
+
+/****** Object:  Table [dbo].[Country]    Script Date: 10/25/2022 11:46:27 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Country](
+	[CountryId] [int] IDENTITY(1,1) NOT NULL,
+	[TwoDigitCountryCode] [nvarchar](10) NULL,
+	[ThreeDigitCountryCode] [nvarchar](10) NULL,
+	[CountryName] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+
+
+
