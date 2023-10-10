@@ -118,7 +118,7 @@ namespace ResfulCrudOperations.Controllers
                 cityWhetherForecast.ErrorMessage = ex.Message;
                 return cityWhetherForecast;
             }
-
+_logger.LogInformation("Applying coupon {CouponCode}", code);
             return cityWhetherForecast;
         }
         
